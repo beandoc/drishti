@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav-Drishti | Empowering Your Vision, Understanding Your Care</title>
+    <title>Nav-Jyoti | Empowering Your Vision, Understanding Your Care</title>
     <meta name="description"
-        content="Nav-Drishti is your comprehensive resource for understanding eye health, exploring advanced treatments, and taking control of your ophthalmic journey.">
+        content="Nav-Jyoti is your comprehensive resource for understanding eye health, exploring advanced treatments, and taking control of your ophthalmic journey.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Instrument+Serif:ital@1&family=Inter:wght@500&family=Manrope:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -22,10 +22,14 @@
     <header class="navbar-wrapper">
         <nav class="navbar">
             <div class="nav-left">
-                <div class="logo">
-                    <img src="assets/logo_mark.png" alt="Nav-Drishti Logo Mark" class="logo-mark">
-                    <span class="logo-text">Nav-Drishti</span>
-                </div>
+                <a href="index.html" class="logo">
+                    <svg class="logo-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg>
+                    <span class="logo-text">Nav-Jyoti</span>
+                </a>
                 <div class="nav-links">
                     <a href="index.html" class="nav-link">Home</a>
                     <div class="nav-link-dropdown-container">
@@ -42,8 +46,9 @@
                             <a href="#">Glaucoma</a>
                         </div>
                     </div>
-                    <a href="#" class="nav-link">Patient Resources</a>
-                    <a href="#" class="nav-link">Contact Clinic</a>
+                    <a href="#downloads" class="nav-link">Patient Resources</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
                 </div>
             </div>
             <div class="nav-right">
@@ -74,7 +79,7 @@
                 </div>
                 <p class="hero-subtitle">
                     Your comprehensive resource for understanding eye health, exploring advanced treatments, and taking
-                    control of your ophthalmic journey with Nav-Drishti.
+                    control of your ophthalmic journey with Nav-Jyoti.
                 </p>
                 <div class="cta-buttons">
                     <a href="squint.html" class="btn-cta-primary">Explore Conditions</a>
@@ -92,7 +97,518 @@
         </div>
     </section>
 
-    <script src="main.js"></script>
+    <!-- Specialities Horizontal Scroll Section -->
+    <section class="specialities-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 40px; margin-left: 20px;">Our Specialities
+            </h2>
+            <div class="specialities-scroll-wrapper">
+                <button class="scroll-btn prev" id="spec-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <div class="specialities-track" id="spec-track">
+                    <div class="speciality-card">
+                        <div class="spec-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80"
+                                alt="Oculoplasty">
+                        </div>
+                        <div class="spec-info">
+                            <h3>Oculoplasty & Orbit</h3>
+                        </div>
+                    </div>
+                    <div class="speciality-card">
+                        <div class="spec-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=600&q=80"
+                                alt="Pediatric Ophthalmology">
+                        </div>
+                        <div class="spec-info">
+                            <h3>Pediatric Ophthalmology</h3>
+                        </div>
+                    </div>
+                    <div class="speciality-card">
+                        <div class="spec-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80"
+                                alt="Refractive Surgery">
+                        </div>
+                        <div class="spec-info">
+                            <h3>Refractive Surgery</h3>
+                        </div>
+                    </div>
+                    <div class="speciality-card">
+                        <div class="spec-img-wrapper">
+                            <img src="https://plus.unsplash.com/premium_photo-1663013627038-08579d46927e?auto=format&fit=crop&w=600&q=80"
+                                alt="Pediatric Squint Surgery">
+                        </div>
+                        <div class="spec-info">
+                            <h3>Pediatric Squint Surgery</h3>
+                        </div>
+                    </div>
+                    <div class="speciality-card">
+                        <div class="spec-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=600&q=80"
+                                alt="Glaucoma Service">
+                        </div>
+                        <div class="spec-info">
+                            <h3>Glaucoma</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-btn next" id="spec-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethos & Quality Section -->
+    <section class="ethos-section">
+        <div class="container">
+            <div class="ethos-grid">
+                <div class="ethos-content">
+                    <h2>Driven by Quality,<br>Defined by Care</h2>
+                    <p class="ethos-description">
+                        At Nav-Jyoti, our Quality Policy is the cornerstone of our commitment. We pledge to meet the
+                        diverse needs of our patients through a dedicated team of highly qualified professionals,
+                        upholding safety and well-being as our highest priority.
+                    </p>
+                    <div class="nabh-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                        NABH Accredited Healthcare Provider
+                    </div>
+                </div>
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                            </svg>
+                        </div>
+                        <h4>Patient Care</h4>
+                        <p>Compassionate care using the latest clinical advancements and international standards.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h4>Community</h4>
+                        <p>Relentless focus on community outreach to bring vision care to those who need it most.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                            </svg>
+                        </div>
+                        <h4>Education</h4>
+                        <p>Shaping the future of ophthalmology through academic excellence and professional training.
+                        </p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4.5 3h15M12 3v18M6 21h12" />
+                            </svg>
+                        </div>
+                        <h4>Research</h4>
+                        <p>Pushing boundaries with groundbreaking research and innovative surgical techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Care & Treatments Section -->
+    <section class="clinical-section">
+        <div class="container">
+            <div class="clinical-intro">
+                <h2>Medical & Surgical<br>Vision Excellence</h2>
+                <p>Designed to provide a comprehensive range of medical and surgical eye care, we are dedicated to the
+                    protection, preservation, enhancement, and restoration of vision for all age groups. Our team
+                    utilizes sophisticated diagnostic and microsurgical equipment with the latest technology to ensure
+                    Personalized counselling and holistic care for optimum outcomes.</p>
+            </div>
+
+            <div class="treatments-header">
+                <p>Advanced Procedures</p>
+                <h3>Our Treatments</h3>
+            </div>
+
+            <div class="treatments-grid">
+                <div class="treatment-detail-card">
+                    <h4>Vitrectomy</h4>
+                    <p>A precision surgery to remove part or all of the vitreous humor. Anterior vitrectomy addresses
+                        vitreous issues in the front structures of the eye, often necessary when tangled with
+                        intraocular lenses.</p>
+                </div>
+                <div class="treatment-detail-card">
+                    <h4>Cornea & Refractive</h4>
+                    <p>Comprehensive care for conditions affecting the cornea and refractive errors caused by the shape
+                        of the eye, restoring clarity and precision to your vision.</p>
+                </div>
+                <div class="treatment-detail-card">
+                    <h4>Oculoplasty</h4>
+                    <p>Specialized plastic surgery for eyes and surrounding structures, improving tear drainage,
+                        correcting eyelid malposition, and treating skin cancers of the eyelid.</p>
+                </div>
+                <div class="treatment-detail-card">
+                    <h4>Retinal Disorders</h4>
+                    <p>Light-sensitive tissue care targeting the back of the eye to prevent vision loss and blindness
+                        caused by complex retinal conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Patients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="patient-header">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=150&q=80"
+                            alt="Patient 1" class="patient-img">
+                        <div class="patient-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>Cataract Patient</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"The care I received at Nav-Jyoti was exceptional. The doctors explained
+                        everything clearly, and my vision after the cataract surgery is better than it has been in
+                        years."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="patient-header">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80"
+                            alt="Patient 2" class="patient-img">
+                        <div class="patient-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Refractive Surgery</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Clean clinic, wonderful staff, and state-of-the-art equipment. I felt
+                        safe and well-informed throughout my entire experience. Highly recommended for eye care."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="patient-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+                            alt="Patient 3" class="patient-img">
+                        <div class="patient-info">
+                            <h4>Amit Patel</h4>
+                            <p>Squint Correction</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"I had a successful squint surgery for my son. The doctors were very
+                        patient with him and the results are amazing. Thank you Nav-Jyoti team!"</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Hub (Videos & Podcasts) -->
+    <section class="education-section" id="education">
+        <div class="container">
+            <h2 class="section-title">Education Hub</h2>
+            <p class="section-subtitle">Learn about eye health from our expert doctors through videos and podcasts.</p>
+
+            <div class="education-tabs">
+                <button class="tab-btn active" data-tab="videos">Videos</button>
+                <button class="tab-btn" data-tab="podcasts">Podcasts</button>
+            </div>
+
+            <div class="education-grid" id="education-grid">
+                <!-- Video Placeholders -->
+                <div class="edu-card video-card">
+                    <div class="edu-thumbnail">
+                        <div class="play-overlay"><svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                                <path d="M8 5v14l11-7z" />
+                            </svg></div>
+                        <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&w=600&q=80"
+                            alt="Video 1">
+                    </div>
+                    <div class="edu-content">
+                        <h3>Understanding Cataracts</h3>
+                        <p>A deep dive into symptoms and treatment options.</p>
+                        <span class="edu-tag">8:45 mins</span>
+                    </div>
+                </div>
+                <div class="edu-card video-card">
+                    <div class="edu-thumbnail">
+                        <div class="play-overlay"><svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                                <path d="M8 5v14l11-7z" />
+                            </svg></div>
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80"
+                            alt="Video 2">
+                    </div>
+                    <div class="edu-content">
+                        <h3>Post-Surgery Care</h3>
+                        <p>Essential tips for a smooth recovery period.</p>
+                        <span class="edu-tag">5:20 mins</span>
+                    </div>
+                </div>
+                <!-- Podcast Placeholders -->
+                <div class="edu-card podcast-card">
+                    <div class="edu-thumbnail">
+                        <div class="play-overlay"><svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+                                <path
+                                    d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" />
+                                <path
+                                    d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" />
+                            </svg></div>
+                        <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=600&q=80"
+                            alt="Podcast 1">
+                    </div>
+                    <div class="edu-content">
+                        <h3>Digital Eye Strain</h3>
+                        <p>How to protect your eyes in the digital age.</p>
+                        <span class="edu-tag">12 mins audio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources & Downloads Section -->
+    <section class="downloads-section" id="downloads">
+        <div class="container">
+            <div class="split-section">
+                <div class="content-left">
+                    <h2 class="section-title">Patient Resources</h2>
+                    <p>Access helpful guides and forms to prepare for your visit or learn more about post-operative
+                        care.</p>
+                    <ul class="download-list">
+                        <li>
+                            <div class="download-info">
+                                <strong>New Patient Intake Form</strong>
+                                <span>PDF • 1.2 MB</span>
+                            </div>
+                            <a href="#" class="btn-download">Download</a>
+                        </li>
+                        <li>
+                            <div class="download-info">
+                                <strong>Cataract Surgery Roadmap</strong>
+                                <span>PDF • 4.5 MB</span>
+                            </div>
+                            <a href="#" class="btn-download">Download</a>
+                        </li>
+                        <li>
+                            <div class="download-info">
+                                <strong>Squint Exercises Guide</strong>
+                                <span>PDF • 2.8 MB</span>
+                            </div>
+                            <a href="#" class="btn-download">Download</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-right">
+                    <img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?auto=format&fit=crop&w=800&q=80"
+                        alt="Resources" class="resources-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is eye surgery safe?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Modern eye surgery is extremely safe and has high success rates. At Nav-Jyoti, we use
+                            state-of-the-art diagnostic and surgical equipment to ensure the highest standards of safety
+                            and precision.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does it take to recover?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Recovery time varies by procedure. For cataract surgery, most patients see improvement within
+                            24-48 hours. Complete healing usually takes 4-6 weeks.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer cashless treatments?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we are empanelled with most major insurance providers and government schemes. Contact
+                            our billing desk for specific coverage details.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What should I bring for my first visit?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Please bring any current prescription glasses, previous medical reports, a list of current
+                            medications, and a valid photo ID.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eye Donation Promo -->
+    <section class="donation-promo">
+        <div class="container">
+            <div class="promo-card">
+                <div class="promo-text">
+                    <h2>Give the Gift of Sight</h2>
+                    <p>Your pledge to donate your eyes can change someone's world forever. Join our noble mission today.
+                    </p>
+                    <a href="eye-donation.html" class="btn-cta-primary">Make a Pledge Today</a>
+                </div>
+                <div class="promo-visual">
+                    <img src="https://images.unsplash.com/photo-1551601651-261ad04791ad?auto=format&fit=crop&w=400&q=80"
+                        alt="Donate Eyes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <div class="blog-header">
+                <h2 class="section-title">Insights & Updates</h2>
+                <a href="#" class="view-all">View All Articles →</a>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80"
+                            alt="Blog 1">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Feb 15, 2026</span>
+                        <h3>Advancements in Laser Eye Surgery</h3>
+                        <p>Exploring the latest technologies that make eye surgeries safer and more precise than ever.
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?auto=format&fit=crop&w=600&q=80"
+                            alt="Blog 2">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Feb 10, 2026</span>
+                        <h3>Nutrition for Healthy Eyes</h3>
+                        <p>Which vitamins and foods should you include in your diet for maintaining optimal eye health?
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=600&q=80"
+                            alt="Blog 3">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Jan 28, 2026</span>
+                        <h3>Understanding Screen Time in Children</h3>
+                        <p>Practical tips for parents to manage their children's digital exposure and eye health.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.05); background: #070B14;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+                <div>
+                    <div class="logo" style="margin-bottom: 24px;">
+                        <img src="assets/logo_mark.png" alt="Nav-Jyoti Logo Mark" class="logo-mark">
+                        <span class="logo-text">Nav-Jyoti</span>
+                    </div>
+                    <p style="opacity: 0.6; line-height: 1.8;">Leading the way in ophthalmic excellence and
+                        compassionate eye care since 2026.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 24px;">Quick Links</h4>
+                    <ul style="list-style: none; opacity: 0.7; line-height: 2.2;">
+                        <li><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></li>
+                        <li><a href="#specialities" style="color: inherit; text-decoration: none;">Specialities</a></li>
+                        <li><a href="#faq" style="color: inherit; text-decoration: none;">FAQ</a></li>
+                        <li><a href="eye-donation.html" style="color: inherit; text-decoration: none;">Eye Donation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 24px;">Treatments</h4>
+                    <ul style="list-style: none; opacity: 0.7; line-height: 2.2;">
+                        <li><a href="cataract-surgery.html" style="color: inherit; text-decoration: none;">Cataract</a>
+                        </li>
+                        <li><a href="squint-surgery.html" style="color: inherit; text-decoration: none;">Squint
+                                Surgery</a></li>
+                        <li><a href="squint.html" style="color: inherit; text-decoration: none;">Squint Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 24px;">Contact Us</h4>
+                    <p style="opacity: 0.7; line-height: 1.8;">
+                        24x7 Helpline:<br>
+                        <span style="color: #0077B6; font-weight: 700;">(044 2828 1919)</span><br><br>
+                        Email: info@navjyoti.com
+                    </p>
+                </div>
+            </div>
+            <div
+                style="text-align: center; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05); opacity: 0.4; font-size: 14px;">
+                <p>&copy; 2026 Nav-Jyoti Ophthalmology Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
